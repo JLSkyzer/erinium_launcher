@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="200.0" prefWidth="310.0" style="-fx-background-color: rgba(44,44,44,0.6); -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+          <Label fx:id="server_name_label" layoutX="106.0" layoutY="-1.0" text="Server Name" textFill="WHITE">
+              <font>
+                  <Font name="MyriadPro-Regular" size="20.0" />
+              </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+          </Label>
+          <ImageView fx:id="server_statut_image" fitHeight="24.0" fitWidth="24.0" layoutX="80.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+          <ImageView fx:id="favicon_image" fitHeight="70.0" fitWidth="70.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@../images/statut_server_minecraft_btn.png" />
+              </image>
+          </ImageView>
+      <Text fx:id="server_desc_text" fill="WHITE" fontSmoothingType="LCD" layoutX="5.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server desc" wrappingWidth="300.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+          <HBox alignment="CENTER_LEFT" layoutX="80.0" layoutY="34.0" prefHeight="30.0" prefWidth="191.0" spacing="5.0">
+              <children>
+                  <Label fx:id="online_players_label" text="10" textFill="WHITE">
+                      <font>
+                          <Font size="20.0" />
+                      </font>
+                  </Label>
+                  <Label text="/" textFill="WHITE">
+                      <font>
+                          <Font size="20.0" />
+                      </font>
+                  </Label>
+                  <Label fx:id="max_players_label" style="-fx-text-fill: #0b7be3;" text="20" textFill="WHITE">
+                      <font>
+                          <Font size="20.0" />
+                      </font>
+                  </Label>
+              </children>
+          </HBox>
+   </children>
+</Pane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="630.0" stylesheets="@../style/launcher_ui.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <right>
+        <VBox alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+            <Button id="ram_manage" contentDisplay="CENTER" style="-fx-background-color: transparent;" styleClass="button-image" text="%ram_manage" textFill="WHITE">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+                <font>
+                    <Font name="MyriadPro-Regular" size="12.0" />
+                </font>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            </Button>
+            <Button id="java_manage" contentDisplay="CENTER" style="-fx-background-color: transparent;" styleClass="button-image" text="%java_manage" textFill="WHITE">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            <font>
+               <Font name="MyriadPro-Regular" size="12.0" />
+            </font>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            </Button>
+            <Button id="others" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: transparent;" styleClass="button-image" text="%others" textFill="WHITE">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            <font>
+               <Font name="MyriadPro-Regular" size="12.0" />
+            </font>
+            </Button>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+        </VBox>
+    </right>
+    <center>
+        <VBox BorderPane.alignment="CENTER">
+            <Pane id="ram_manage_tab" />
+            <Pane id="java_manage_tab" />
+            <Pane id="others_tab" />
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="20.0" />
+         </BorderPane.margin>
+        </VBox>
+    </center>
+</BorderPane>

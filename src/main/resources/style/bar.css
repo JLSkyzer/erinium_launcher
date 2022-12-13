@@ -1,0 +1,4 @@
+.barlist{
+    display: flex;
+    flex-direction: column;
+}

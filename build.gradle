@@ -1,0 +1,91 @@
+import groovy.json.JsonSlurper
+
+plugins {
+    id 'java'
+}
+
+def data = getData()
+jar.archiveFileName = "${data.theme.name}-${data.theme.integrity}.jar"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+task moveFile(type: Copy) {
+    if (data.theme.dev_mode) {
+        from jar.destinationDirectory
+        into getThemesDirectory().getAbsolutePath()
+        include jar.archiveName
+    }
+}
+
+task build(type: Exec, overwrite: true) {
+    commandLine git_cmd_path, 'gradle moveFile'
+}
+
+
+// Code Section - Don't touch below
+
+enum OS {
+    WINDOWS,
+    OSX,
+    LINUX,
+    UNKNOWN;
+
+    private OS() {
+    }
+}
+
+static def getOSType() {
+    def osname = System.getProperty("os.name").toLowerCase();
+
+    if (osname.contains("win")) {
+        return OS.WINDOWS;
+    } else if (osname.contains("nix") || osname.contains("nux")
+            || osname.contains("aix")) {
+        return OS.LINUX;
+    } else if (osname.contains("mac")) {
+        return OS.OSX;
+    } else {
+        return OS.UNKNOWN;
+    }
+}
+
+static def getUserPath() {
+    def home = System.getProperty("user.home");
+    if (getOSType() == OS.WINDOWS) {
+        return System.getenv("APPDATA");
+    } else if (getOSType() == OS.LINUX) {
+        return System.getProperty("user.home", ".");
+    } else {
+        return home + "/Library/Application Support";
+    }
+}
+
+def getData() {
+    def url = new URL("https://${platform_domain}/data/launcher/${launcher_key}")
+    def response = url.text
+    def parser = new JsonSlurper()
+    def obj = parser.parseText(response)
+    return obj
+}
+
+def getGameDirectory() {
+    def prefix = (getOSType() == OS.WINDOWS || getOSType() == OS.LINUX ?
+            "." : "")
+    return new File(getUserPath() + File.separator + prefix + data.game.directory)
+}
+
+def getLauncherDirectory() {
+    def gameDir = getGameDirectory()
+    System.out.println(gameDir.getAbsolutePath())
+    return new File(gameDir, 'launcher')
+}
+
+def getThemesDirectory() {
+    def launcherDir = getLauncherDirectory()
+    return new File(launcherDir, "themes")
+}

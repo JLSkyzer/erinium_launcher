@@ -1,0 +1,53 @@
+/*.testbtn{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/news_ml_btn.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}*/
+
+.newsbtn{
+    -fx-background-image: url("../images/news_ml_btn.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+.newsbtn:hover{
+     -fx-background-image: url("../images/news_ml_btn_hover.png");
+}
+.settingsbtn{
+    -fx-background-image: url("../images/settings_btn.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+.settingsbtn:hover{
+    -fx-background-image: url("../images/settings_btn_hover.png");
+}
+.homebtn{
+    -fx-background-image: url("../images/home_btn.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+.homebtn:hover{
+    -fx-background-image: url("../images/home_btn_hover.png");
+}
+.closebtn{
+    -fx-background-image: url("../images/close_btn.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+.closebtn:hover{
+    -fx-background-image: url("../images/close_btn_hover.png");
+}
+.reducebtn{
+    -fx-background-image: url("../images/reduce_btn.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+.reducebtn:hover{
+    -fx-background-image: url("../images/reduce_btn_hover.png");
+}
