@@ -2,7 +2,7 @@
  Launcher Erinium pour le service Minelaunched. Ceci est la version 1 !, Utilisation comme thème de "sample" autorisé
 
 Pour installer, faites
-```terminal
+```java
 gradle build
 ```
 Puis
