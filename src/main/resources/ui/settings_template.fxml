@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="630.0" stylesheets="@../style/launcher_ui.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="630.0" stylesheets="@../style/launcher_ui.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
     <right>
         <VBox alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
             <Button id="ram_manage" contentDisplay="CENTER" style="-fx-background-color: transparent;" styleClass="button-image" text="%ram_manage" textFill="WHITE">
@@ -45,10 +45,10 @@
         </VBox>
     </right>
     <center>
-        <VBox BorderPane.alignment="CENTER">
+        <VBox maxWidth="410.0" BorderPane.alignment="CENTER_LEFT">
             <Pane id="ram_manage_tab" />
             <Pane id="java_manage_tab" />
-            <Pane id="others_tab" />
+            <Pane id="others_tab" maxWidth="390.0" />
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>

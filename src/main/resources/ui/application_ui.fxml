@@ -27,7 +27,7 @@
       </ImageView>
       <AnchorPane prefHeight="719.0" prefWidth="1280.0" style="-fx-background-color: transparent;">
          <children>
-              <StackPane styleClass="snowflake" />
+              <StackPane prefHeight="720.0" prefWidth="1280.0" styleClass="snowflake" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
             <HBox alignment="CENTER" layoutX="-41.0" layoutY="336.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" rotate="-90.0" spacing="5.0" style="-fx-background-color: rgba(44, 44, 44, 0.6); -fx-background-radius: 50px;" styleClass="barlist" stylesheets="@../style/bar.css" AnchorPane.leftAnchor="-41.0">
                <children>
                   <Button fx:id="btnNewsML" mnemonicParsing="false" onAction="#onNewsMLBtnClicked" prefHeight="40.0" prefWidth="40.0" rotate="90.0" style="-fx-background-color: transparent;" styleClass="newsbtn" stylesheets="@../style/button.css" textAlignment="CENTER">

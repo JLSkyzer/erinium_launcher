@@ -45,7 +45,7 @@
                             </Label>
                         </children>
                     </HBox>
-                  <Label fx:id="year_label" text="2022" textFill="WHITE">
+                  <Label fx:id="year_label" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
