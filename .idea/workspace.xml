@@ -8,7 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/style/application_ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/application_ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/style/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/style/launcher_ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/launcher_ui.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ui/application_ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/application_ui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/launcher_ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/launcher_ui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/news_template.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/news_template.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +43,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -121,6 +132,27 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update Background" />
     <option name="LAST_COMMIT_MESSAGE" value="Update Background" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -34,20 +34,20 @@
     -fx-background-image: url("../images/home_btn_hover.png");
 }
 .closebtn{
-    -fx-background-image: url("../images/close_btn.png");
-    -fx-background-position: center;
+    /*-fx-background-image: url("../images/close_btn.png");*/
+    /*-fx-background-position: center;
     -fx-background-repeat: no-repeat;
-    -fx-background-size: contain;
+    -fx-background-size: contain;*/
 }
 .closebtn:hover{
-    -fx-background-image: url("../images/close_btn_hover.png");
+    /*-fx-background-image: url("../images/close_btn_hover.png");*/
 }
 .reducebtn{
-    -fx-background-image: url("../images/reduce_btn.png");
+    /*-fx-background-image: url("../images/reduce_btn.png");
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
-    -fx-background-size: contain;
+    -fx-background-size: contain;*/
 }
 .reducebtn:hover{
-    -fx-background-image: url("../images/reduce_btn_hover.png");
+    /*-fx-background-image: url("../images/reduce_btn_hover.png");*/
 }

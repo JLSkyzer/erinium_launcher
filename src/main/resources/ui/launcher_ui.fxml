@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="launcher_ui" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="630.0" stylesheets="@../style/launcher_ui.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="launcher_ui" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="630.0" stylesheets="@../style/launcher_ui.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
     <children>
       <ScrollPane fx:id="newsScrollPane" hbarPolicy="NEVER" prefHeight="616.0" prefWidth="519.0" visible="false" AnchorPane.bottomAnchor="-143.0" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="-143.0">
          <content>
@@ -27,7 +27,7 @@
                         <Font name="MyriadPro-Regular" size="20.0" />
                      </font>
                   </Label>
-                  <ImageView fitWidth="375.0" layoutX="91.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="emailfield" fitWidth="375.0" layoutX="91.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/email_field.png" />
                      </image>
@@ -61,7 +61,7 @@
               </AnchorPane>
               <AnchorPane fx:id="custom_auth_container" prefHeight="330.0" prefWidth="630.0" visible="false">
                   <children>
-                      <ImageView fitWidth="375.0" layoutX="103.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                      <ImageView fx:id="emailfield" fitWidth="375.0" layoutX="103.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/email_field.png" />
                      </image>
@@ -71,7 +71,7 @@
                         <Font name="MyriadPro-Regular" size="20.0" />
                      </font>
                   </TextField>
-                  <ImageView fitWidth="375.0" layoutX="103.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="passwordfield" fitWidth="375.0" layoutX="103.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/password_field.png" />
                      </image>

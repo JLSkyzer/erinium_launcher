@@ -24,15 +24,11 @@ label{
 }
 
 .close_btn{
-    -fx-background-size: 100% 100%;
+    /*-fx-background-size: 100% 100%;
     -fx-font-size: 20px;
-    -fx-graphic: url("../images/close_btn.png");
+    -fx-graphic: url("../images/close_btn.png");*/
 }
 
 .close_btn:hover{
-    -fx-graphic: url("../images/close_btn_hover.png");
-}
-
-.bgimg{
-
+    /*-fx-graphic: url("../images/close_btn_hover.png");*/
 }
