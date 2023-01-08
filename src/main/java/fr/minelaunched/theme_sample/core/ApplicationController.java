@@ -5,19 +5,15 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ApplicationController implements Initializable {
@@ -38,6 +34,12 @@ public class ApplicationController implements Initializable {
     @FXML
     private Button btnNewsML;
 
+    @FXML
+    private StackPane stackpane;
+
+    @FXML
+    private ImageView backgroundframe;
+
     public ApplicationController(Stage stage) {
         this.stage = stage;
         stage.setTitle("Erinium World");
@@ -48,11 +50,31 @@ public class ApplicationController implements Initializable {
         stage.setResizable(false);
     }
 
+    private HashMap<String, Object> dataFields;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         AnchorPane statutservermc_container = (AnchorPane) stage.getScene().lookup("#statutservermc_container");
 //        setManagedAll(btnServerMinecraftStatut, isStatutServerMCEnabled);
         setManagedAll(btnNewsML, isNewsMLEnabled);
+
+        Object backgroundImg = dataFields.get("background");
+        Object backgroundframeImg = dataFields.get("backgroundframe");
+        if (dataFields.containsKey("background")){
+            String backgroundImgString = new String(backgroundImg.toString());
+            Image image = new Image(backgroundImgString);
+            Background bgimage = new Background(new BackgroundImage(new Image(backgroundImgString), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(1280, 720, true, true, true, true) /*BackgroundSize.DEFAULT*/));
+            stackpane.setBackground(bgimage);
+        }
+        if (dataFields.containsKey("backgroundframe")){
+            String backgroundFrameImgString = new String(backgroundframeImg.toString());
+            Image image = new Image(backgroundFrameImgString);
+            backgroundframe.setImage(image);
+        }else{System.out.println("Set backgroundframe to default (No value)");}
+    }
+
+    private Image toString(Object value) {
+        return null;
     }
 
     public void onSettingsBtnClicked() {

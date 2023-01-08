@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c3e4fca1-5d66-47b0-9bc0-88031458d80c" name="Changes" comment="Update Background">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/style/application_ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/application_ui.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ui/application_ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/application_ui.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/news_template.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/news_template.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/settings_template.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/settings_template.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
