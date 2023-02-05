@@ -6,7 +6,7 @@
     -fx-background-size: contain;
 }*/
 
-.newsbtn{
+/*.newsbtn{
     -fx-background-image: url("../images/news_ml_btn.png");
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
@@ -14,8 +14,8 @@
 }
 .newsbtn:hover{
      -fx-background-image: url("../images/news_ml_btn_hover.png");
-}
-.settingsbtn{
+}*/
+/*.settingsbtn{
     -fx-background-image: url("../images/settings_btn.png");
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
@@ -23,8 +23,8 @@
 }
 .settingsbtn:hover{
     -fx-background-image: url("../images/settings_btn_hover.png");
-}
-.homebtn{
+}*/
+/*.homebtn{
     -fx-background-image: url("../images/home_btn.png");
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 }
 .homebtn:hover{
     -fx-background-image: url("../images/home_btn_hover.png");
-}
+}*/
 .closebtn{
     /*-fx-background-image: url("../images/close_btn.png");*/
     /*-fx-background-position: center;

@@ -11,6 +11,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -30,19 +31,25 @@ public class ApplicationController implements Initializable {
     private Button btnServerMinecraftStatut;*/
 
     @FXML
-    private Button btnHome;
-    @FXML
     private Button btnNewsML;
     @FXML
     private StackPane stackpane;
     @FXML
     private ImageView backgroundframe;
     @FXML
+    private ImageView emailfield;
+    @FXML
     private AnchorPane anchorepane;
     @FXML
     private Button app_close_btn;
     @FXML
     private Button app_reduce_btn;
+    @FXML
+    private Button btnHome;
+    @FXML
+    private Button btnSettings;
+    @FXML
+    private Text server_desc_text;
 
     public ApplicationController(Stage stage) {
         this.stage = stage;
@@ -69,6 +76,12 @@ public class ApplicationController implements Initializable {
         Object closebuttonhover = dataFields.get("closebuttonhover");
         Object reducebutton = dataFields.get("reducebutton");
         Object reducebuttonhover = dataFields.get("reducebuttonhover");
+        Object homebutton = dataFields.get("homebutton");
+        Object homebuttonhover = dataFields.get("homebuttonhover");
+        Object settingsbutton = dataFields.get("settingsbutton");
+        Object settingsbuttonhover = dataFields.get("settingsbuttonhover");
+        Object newsbutton = dataFields.get("newsbutton");
+        Object newsbuttonhover = dataFields.get("newsbuttonhover");
 
         if (dataFields.containsKey("background")){
             String backgroundImgString = new String(backgroundImg.toString());
@@ -98,6 +111,33 @@ public class ApplicationController implements Initializable {
             app_reduce_btn.setOnMouseEntered(e -> app_reduce_btn.setBackground(reducebuttonhoverimage));
             app_reduce_btn.setOnMouseExited(e -> app_reduce_btn.setBackground(reducebuttonimage));
         }
+        if (dataFields.containsKey("homebutton")) {
+            String homebuttonString = new String(homebutton.toString());
+            String homebuttonhoverString = new String(homebuttonhover.toString());
+            Background homebuttonimage = new Background(new BackgroundImage(new Image(homebuttonString), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(60, 60, false, false, true, false)));
+            Background homebuttonhoverimage = new Background(new BackgroundImage(new Image(homebuttonhoverString), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(60, 60, false, false, true, false)));
+            btnHome.setBackground(homebuttonimage);
+            btnHome.setOnMouseEntered(e -> btnHome.setBackground(homebuttonhoverimage));
+            btnHome.setOnMouseExited(e -> btnHome.setBackground(homebuttonimage));
+        }
+        if (dataFields.containsKey("settingsbutton")) {
+            String settingsbuttonString = new String(settingsbutton.toString());
+            String settingsbuttonhoverString = new String(settingsbuttonhover.toString());
+            Background settingsbuttonImage = new Background(new BackgroundImage(new Image(settingsbuttonString), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(60, 60, false, false, true, false)));
+            Background settingsbuttonhoverImage = new Background(new BackgroundImage(new Image(settingsbuttonhoverString), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(60, 60, false, false, true, false)));
+            btnSettings.setBackground(settingsbuttonImage);
+            btnSettings.setOnMouseEntered(e -> btnSettings.setBackground(settingsbuttonhoverImage));
+            btnSettings.setOnMouseExited(e -> btnSettings.setBackground(settingsbuttonImage));
+        }
+        if (dataFields.containsKey("newsbutton")) {
+            String newsbuttonString = new String(newsbutton.toString());
+            String newsbuttonhoverString = new String(newsbuttonhover.toString());
+            Background newsbuttonImage = new Background(new BackgroundImage(new Image(newsbuttonString), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(60, 60, false, false, true, false)));
+            Background newsbuttonhoverImage = new Background(new BackgroundImage(new Image(newsbuttonhoverString), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(60, 60, false, false, true, false)));
+            btnNewsML.setBackground(newsbuttonImage);
+            btnNewsML.setOnMouseEntered(e -> btnNewsML.setBackground(newsbuttonhoverImage));
+            btnNewsML.setOnMouseExited(e -> btnNewsML.setBackground(newsbuttonImage));
+        }
     }
 
     private Image toString(Object value) {
@@ -112,6 +152,8 @@ public class ApplicationController implements Initializable {
 
         statutservermc_container.setManaged(true);
         statutservermc_container.setVisible(true);
+
+        ArrayList<String> color = null;
     }
 
     public void onHomeBtnClicked() {

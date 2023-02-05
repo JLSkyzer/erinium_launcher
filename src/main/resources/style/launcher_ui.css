@@ -8,6 +8,7 @@
 
 .button-image:hover {
     -fx-background-image: url("../images/play_btn_hover.png");
+    -fx-text-fill: #404040;
 }
 
 .scroll-pane {

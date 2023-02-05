@@ -22,17 +22,16 @@
          <children>
               <AnchorPane fx:id="crack_auth_container" prefHeight="330.0" prefWidth="630.0" visible="false">
                   <children>
-                  <Label layoutX="91.0" layoutY="44.0" text="%nickname_label" textFill="WHITE">
+                  <Label layoutX="91.0" layoutY="74.0" text="%nickname_label" textFill="WHITE">
                      <font>
                         <Font name="MyriadPro-Regular" size="20.0" />
                      </font>
                   </Label>
-                  <ImageView fx:id="emailfield" fitWidth="375.0" layoutX="91.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="crackemailfield" fitWidth="375.0" layoutX="91.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/email_field.png" />
-                     </image>
-                  </ImageView>
-                      <TextField layoutX="158.0" layoutY="111.0" prefHeight="50.0" prefWidth="300.0" promptText="%login" style="-fx-background-color: transparent; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #ffffff; -fx-font-size: 20px;" styleClass="login">
+                     </image></ImageView>
+                      <TextField fx:id="usernamefield" layoutX="158.0" layoutY="111.0" prefHeight="50.0" prefWidth="300.0" promptText="%login" style="-fx-background-color: transparent; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #ffffff; -fx-font-size: 20px;" styleClass="login">
                      <font>
                         <Font name="MyriadPro-Regular" size="20.0" />
                      </font>
@@ -61,7 +60,7 @@
               </AnchorPane>
               <AnchorPane fx:id="custom_auth_container" prefHeight="330.0" prefWidth="630.0" visible="false">
                   <children>
-                      <ImageView fx:id="emailfield" fitWidth="375.0" layoutX="103.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                      <ImageView fx:id="customemailfield" fitWidth="375.0" layoutX="103.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/email_field.png" />
                      </image>
@@ -96,12 +95,12 @@
                         <String fx:value="button-image" />
                      </styleClass>
                   </Button>
-                  <Label layoutX="104.0" layoutY="14.0" text="%email_label" textFill="WHITE">
+                  <Label layoutX="104.0" layoutY="43.0" text="%email_label" textFill="WHITE">
                      <font>
                         <Font name="Corbel Light" size="20.0" />
                      </font>
                   </Label>
-                  <Label layoutX="104.0" layoutY="141.0" text="%password_label" textFill="WHITE">
+                  <Label layoutX="104.0" layoutY="160.0" text="%password_label" textFill="WHITE">
                      <font>
                         <Font name="MyriadPro-Regular" size="20.0" />
                      </font>
@@ -110,7 +109,7 @@
               </AnchorPane>
             <AnchorPane fx:id="microsoft_auth_container" prefHeight="330.0" prefWidth="630.0" visible="false">
                <children>
-                  <Button fx:id="btn_submit_microsoft_auth" contentDisplay="CENTER" layoutX="215.0" layoutY="140.0" prefWidth="98.0" style="-fx-background-color: transparent;" styleClass="button-image" text="Microsoft" textFill="WHITE">
+                  <Button fx:id="btn_submit_microsoft_auth" contentDisplay="CENTER" layoutX="215.0" layoutY="140.0" prefWidth="98.0" style="-fx-background-color: transparent;" styleClass="button-image" text="Jouer !" textFill="WHITE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>

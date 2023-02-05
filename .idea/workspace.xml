@@ -7,12 +7,17 @@
     <list default="true" id="c3e4fca1-5d66-47b0-9bc0-88031458d80c" name="Changes" comment="Update Background">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/LauncherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/LauncherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/SettingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/play_btn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/play_btn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/play_btn_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/play_btn_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/progress_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/progress_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/progress_bar_filled.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/progress_bar_filled.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/style/application_ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/application_ui.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/style/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/style/launcher_ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/launcher_ui.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ui/application_ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/application_ui.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ui/launcher_ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/launcher_ui.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/news_template.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/news_template.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +72,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/killi/Desktop/Dev/Minecraft mod project/erinium&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/killi/Desktop/Dev/Minecraft mod project/Erinium_World&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RunAnythingCache">
@@ -138,17 +143,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java</url>
-          <line>145</line>
+          <line>187</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java</url>
-          <line>149</line>
+          <line>191</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fr/minelaunched/theme_sample/core/ApplicationController.java</url>
-          <line>153</line>
+          <line>195</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

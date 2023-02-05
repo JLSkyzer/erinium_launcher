@@ -9,6 +9,12 @@ label{
     -fx-font-family: "Roboto Medium";
 }
 
+#progressBar{
+    -fx-background-image: url("../images/progress_bar.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
 #progressBar > .track {
     -fx-background-image: url("../images/progress_bar.png");
     -fx-background-size: stretch;
